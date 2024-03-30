@@ -29,7 +29,7 @@ function InputBox({
             id={amountInputId}
             type="number"
             placeholder="Amount"
-            value={amount}
+            value={amount === 0 ? '' : amount} // Set empty string if amount is 0
             disabled={amountDisabled}
             onChange={(e) =>
               onAmountChange && onAmountChange(Number(e.target.value))
@@ -46,11 +46,11 @@ function InputBox({
               onCurrencyChange && onCurrencyChange(e.target.value)
             }
           >
-            {currencyOptions.map((currency) => {
+            {currencyOptions.map((currency) => (
               <option key={currency} value={currency}>
                 {currency}
-              </option>; //Remember the key while using loop in react, without key performance degrades drastically
-            })}
+              </option>
+            ))}
           </select>
         </div>
       </div>
