@@ -1,0 +1,34 @@
+.notes-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 16px 0;
+  }
+  
+  .notes-input-container input,
+  .notes-input-container textarea {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    resize: none;
+  }
+  
+  .notes-input-container textarea {
+    height: 150px;
+  }
+  
+  .notes-input-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .material-icons-outlined {
+    font-size: 1.5rem;
+    color: #666;
+  }
+  

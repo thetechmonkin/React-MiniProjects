@@ -1,0 +1,36 @@
+.notes-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.notes-card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.notes-card p {
+  margin-top: 10px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.notes-card button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.notes-card button:hover {
+  background-color: #f8f9fa;
+  border-radius: 50%;
+}
+
+.material-icons,
+.material-icons-outlined {
+  font-size: 1.3rem;
+  color: #666;
+}

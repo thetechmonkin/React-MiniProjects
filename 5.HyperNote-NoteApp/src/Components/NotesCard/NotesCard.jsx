@@ -85,7 +85,7 @@ function NotesCard({ note, isPinnedIconVisible = true }) {
     }
   };
   return (
-    <div>
+    <div className="notes-card">
       <div>
         <h2>{note.title}</h2>
         {isPinnedIconVisible ? (
@@ -102,6 +102,7 @@ function NotesCard({ note, isPinnedIconVisible = true }) {
           <></>
         )}
       </div>
+      <hr />
       <div>
         <p>{note.description}</p>
       </div>

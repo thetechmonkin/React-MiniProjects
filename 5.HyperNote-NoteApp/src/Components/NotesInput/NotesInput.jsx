@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNotes } from "../../Contexts/notes-context";
 import { v4 as uuid } from "uuid";
+import "./NotesInput.css";
 
 function NotesInput() {
   const [title, setTitle] = useState("");
@@ -18,9 +19,10 @@ function NotesInput() {
     setTitle("");
     setDescription("");
   };
+
   return (
     <>
-      <div>
+      <div className="notes-input-container">
         <input
           type="text"
           placeholder="Enter Title"
@@ -32,10 +34,10 @@ function NotesInput() {
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
-        <button disabled={title.length === 0} onClick={onAddClick}>
-          <span className="material-icons-outlined">add_circle</span>
-        </button>
       </div>
+      <button className="notes-input-button" disabled={title.length === 0} onClick={onAddClick}>
+        <span className="material-icons-outlined">add_circle</span>
+      </button>
     </>
   );
 }

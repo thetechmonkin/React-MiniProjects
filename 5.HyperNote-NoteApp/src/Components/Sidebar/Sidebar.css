@@ -1,4 +1,29 @@
-.sidebar-container{
+.sidebar-container {
     display: flex;
     flex-direction: column;
-}
+    background-color: #f8f9fa;
+    color: #333;
+    height: calc(100vh - 70px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 120px;
+    align-items: center;
+  }
+  
+  .sidebar-container button {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: inherit;
+  }
+  
+  .sidebar-container button:hover,
+  .sidebar-container button:focus,
+  .sidebar-container button:active {
+    background-color: #ff7f50;
+  }
+  
