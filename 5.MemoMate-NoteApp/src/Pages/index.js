@@ -1,7 +1,7 @@
 import Home from "./Home/Home";
-import Archive from "./Home/Archive";
-import Bin from "./Home/Bin";
-import Important from "./Home/Important";
+import Archive from "./Archive/Archive";
+import Bin from "./Bin/Bin";
+import Important from "./Important/Important";
 
 export {
     Home,

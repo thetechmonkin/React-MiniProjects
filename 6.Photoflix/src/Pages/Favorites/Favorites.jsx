@@ -4,7 +4,7 @@ import { Header } from "../../Components";
 const Favorites = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       Fav
     </>
   );
